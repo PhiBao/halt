@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+artifacts/
+.env
+.env.local
+web/.env.local
+web/node_modules/
+web/.next/
+node_modules/
+.gltest_cache/
+*.log
+.DS_Store

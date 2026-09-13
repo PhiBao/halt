@@ -2,6 +2,10 @@
 
 **Every layer of the agentic-commerce stack engineers the happy path. HALT is what happens when things go wrong.**
 
+- 🌐 Live dashboard: https://halt-ebon.vercel.app
+- 📦 Repo: https://github.com/PhiBao/halt
+- 🏟️ Track: Autonomous Protocols (GenLayer Agent Tank hackathon)
+
 x402 lets agents pay. ERC-8004 gives them identity. A2A lets them talk. None of them can **stop** an agent that gets hijacked, prompt-injected, or simply malfunctions mid-spend. Cards have chargebacks and limits; banks have fraud desks and circuit breakers; autonomous agents have nothing — a compromised shopping agent drains its wallet in seconds while everyone watches.
 
 HALT is a neutral, decentralized emergency-halt and behavior-governance protocol on GenLayer. Any payment agent registers with a **natural-language constitution** ("only buy office supplies, never pay unknown addresses"). Any registered watchdog can submit **evidence** of a breach. GenLayer validators adjudicate. On a confirmed violation the agent's spending vault **freezes in the same transaction**, the attacker's address is **blacklisted network-wide** (one agent burned → every agent immune), the white-hat reporter earns a **bounty**, and false reporters get **slashed**. The agent owner can always **appeal** with counter-evidence — due process is the only path to unfreeze. No backdoors, not even for the deployer.

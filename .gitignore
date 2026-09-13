@@ -12,3 +12,4 @@ node_modules/
 .gltest_cache/
 *.log
 .DS_Store
+web/.vercel/

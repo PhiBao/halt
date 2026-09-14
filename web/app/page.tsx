@@ -92,6 +92,7 @@ export default function Page() {
   return (
     <div className="wrap">
       <div className="topbar">
+        <img src="/logo.svg" alt="HALT" className="mark" />
         <div className="logo">HALT</div>
         <div className="tag">circuit breaker for the agentic economy · {s.network}</div>
         <span className={`pill ${halted ? "halt" : "ok"}`}>

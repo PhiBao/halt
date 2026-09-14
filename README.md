@@ -1,5 +1,7 @@
 # HALT — the circuit breaker for the agentic economy
 
+<img src="web/public/logo.svg" alt="HALT logo" width="84" />
+
 **Every layer of the agentic-commerce stack engineers the happy path. HALT is what happens when things go wrong.**
 
 - 🌐 Live dashboard: https://halt-ebon.vercel.app

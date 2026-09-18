@@ -62,14 +62,23 @@ Full matrix executed against hosted validators — see [`scripts/`](scripts/) an
 | Suspicious-pattern report, `behavior` | ✅ **VIOLATION via LLM consensus** ("numeric limits were not exceeded… but constitutional restrictions were still breached") |
 | Genuinely hijacked LLM victim (DGrid gpt-4o-mini) | ✅ drained for real, frozen for real, upheld on appeal |
 
-Live contracts (studionet) · dashboard (`web/`) streams this state in real time.
+Live contracts — **Studio Dev (chain 61997)**, the RC environment requested in steward review.
+Dashboard (`web/`) streams this state in real time.
 
-- Guardian (HaltGuardian): `0xe2588705241b75d3795Ed5ED0A181A7FA4841a9d`
-- Vault (HaltVault): `0x43d6D9aE59ed9D4f06D5407b1D5c868358726a4f`
-- Demo agents, full arcs onchain:
+- Guardian (HaltGuardian): [`0x38790445fe9eDd74e5420D84ee9A5511a547aC12`](https://explorer-studio-dev.genlayer.com/address/0x38790445fe9eDd74e5420D84ee9A5511a547aC12)
+- Vault (HaltVault): [`0xBc9c5199462e6E1D16147Eccbe49056eB1192052`](https://explorer-studio-dev.genlayer.com/address/0xBc9c5199462e6E1D16147Eccbe49056eB1192052)
+- Demo agents, full arcs onchain (identical state reproduced on both chains):
   - `halty` (allowlisted merchant): ACTIVE — the same injection hits the vault wall; deterministic policy blocks it cold. Defense layer one.
   - `halty-open` (open policy): FROZEN via R-1, behavior VIOLATION/high on 8 drain payments. Defense layer two.
   - `halty4` (open policy): FROZEN via R-0, behavior VIOLATION/high — then owner appealed and validators **upheld**. Due process onchain.
+
+Stable studionet (61999) deployment, kept for reference: Guardian
+`0xe2588705241b75d3795Ed5ED0A181A7FA4841a9d`, Vault
+`0x43d6D9aE59ed9D4f06D5407b1D5c868358726a4f`. The RC port lives in
+[`contracts/studio-dev/`](contracts/studio-dev/) with a README documenting every
+SDK difference (runner pin, storage imports, `prompt_comparative`, fee-aware
+writes, and why enforcement moved from guardian `emit` to the vault's live
+fail-closed view).
 
 ## Vision
 

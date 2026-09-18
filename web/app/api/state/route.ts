@@ -62,7 +62,7 @@ async function buildState() {
   const statsObj = stats as { pool?: string };
   return {
     ok: true,
-    network: "studionet",
+    network: "studio-dev (61997)",
     guardian: GUARDIAN,
     vault: VAULT,
     updatedAt: new Date().toISOString(),

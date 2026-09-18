@@ -83,7 +83,7 @@ export default function Page() {
     };
   }, []);
 
-  if (!s) return <div className="wrap"><div className="loading">connecting to studionet…</div></div>;
+  if (!s) return <div className="wrap"><div className="loading">connecting to studio-dev…</div></div>;
   if (!s.ok) return <div className="wrap"><div className="err">state error: {(s as State).error}</div></div>;
 
   const halted = s.stats.frozen_agents > 0;

@@ -1,6 +1,6 @@
 #!/bin/bash
 # HALT studionet setup: wire contracts, fund accounts, register agent.
-# Usage: PW=halt-demo-pass ./scripts/studionet_setup.sh <guardian> <vault>
+# Usage: PW=<keystore-password> ./scripts/studionet_setup.sh <guardian> <vault>
 # Paces transactions (~25s apart) to respect studionet pending-queue caps.
 set -u
 G=${1:?guardian address required}

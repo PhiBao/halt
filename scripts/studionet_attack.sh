@@ -1,6 +1,6 @@
 #!/bin/bash
 # HALT attack demo on studionet: legit spend -> injection drain -> watchdog report -> freeze.
-# Usage: PW=halt-demo-pass ./scripts/studionet_attack.sh <guardian> <vault>
+# Usage: PW=<keystore-password> ./scripts/studionet_attack.sh <guardian> <vault>
 set -u
 G=${1:?guardian address required}
 V=${2:?vault address required}
